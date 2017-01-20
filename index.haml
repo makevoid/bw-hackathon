@@ -1,0 +1,570 @@
+!!!
+%html{:lang => "en", :prefix => "og: http://ogp.me/ns#"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+
+    %title WebSlides: Making HTML presentations easy
+    -# %meta{:content => "WebSlides is the easiest way to make HTML presentations, portfolios, and landings. Just essential features.", :name => "description"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&subset=latin-ext", :rel => "stylesheet"}/
+    / CSS Base
+    %link{:href => "static/css/base.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    / CSS Colors
+    %link{:href => "static/css/colors.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    / Optional - CSS SVG Icons (Font Awesome)
+    %link{:href => "static/css/svg-icons.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "static/css/custom.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    / SOCIAL CARDS (ADD YOUR INFO)
+    / FACEBOOK
+    -# %meta{:content => "http://your-url.com/", :property => "og:url"}/
+    -# / YOUR URL
+    -# %meta{:content => "article", :property => "og:type"}/
+    -# %meta{:content => "WebSlides — Making HTML Presentations Easy", :property => "og:title"}/
+    -# / EDIT
+    -# %meta{:content => "WebSlides is about telling stories beautifully. Just the essential features. Good karma.", :property => "og:description"}/
+    -# / EDIT
+    -# %meta{:content => "2017-01-04T17:20:50", :property => "og:updated_time"}/
+    -# / EDIT
+    -# %meta{:content => "static/images/share-webslides.jpg", :property => "og:image"}/
+    -# / EDIT
+    -# / TWITTER
+    -# %meta{:content => "summary_large_image", :name => "twitter:card"}/
+    -# %meta{:content => "@webslides", :name => "twitter:site"}/
+    -# / EDIT
+    -# %meta{:content => "@jlantunez", :name => "twitter:creator"}/
+    -# / EDIT
+    -# %meta{:content => "WebSlides — Making HTML Presentations Easy", :name => "twitter:title"}/
+    -# / EDIT
+    -# %meta{:content => "WebSlides is about good karma. Just essential features. 120+ free slides ready to use.", :name => "twitter:description"}/
+    -# / EDIT
+    -# %meta{:content => "static/images/share-webslides.jpg", :name => "twitter:image"}/
+    / EDIT
+    / FAVICONS
+    %link{:href => "static/images/favicons/favicon.png", :rel => "shortcut icon", :sizes => "16x16"}/
+    %link{:href => "static/images/favicons/favicon-32.png", :rel => "shortcut icon", :sizes => "32x32"}/
+    %link{:href => "static/images/favicons/favicon-76.png", :rel => "apple-touch-icon icon", :sizes => "76x76"}/
+    %link{:href => "static/images/favicons/favicon-120.png", :rel => "apple-touch-icon icon", :sizes => "120x120"}/
+    %link{:href => "static/images/favicons/favicon-152.png", :rel => "apple-touch-icon icon", :sizes => "152x152"}/
+    %link{:href => "static/images/favicons/favicon-180.png", :rel => "apple-touch-icon icon", :sizes => "180x180"}/
+    %link{:href => "static/images/favicons/favicon-192.png", :rel => "apple-touch-icon icon", :sizes => "192x192"}/
+    / Android
+    %meta{:content => "yes", :name => "mobile-web-app-capable"}/
+    %meta{:content => "#333333", :name => "theme-color"}/
+  %body
+    %header{:role => "banner"}
+      %nav{:role => "navigation"}
+        %p.logo
+          %a{:href => "index.html", :title => "WebSlides"} WebSlides
+        %ul
+          -# %li.github
+          -#   %a{:href => "https://github.com/jlantunez/webslides", :rel => "external", :title => "Github"}
+          -#     %svg.fa-github
+          -#       %use{"xlink:href" => "#fa-github"}
+          -#     %em WebSlides
+          -# %li.twitter
+          -#   %a{:href => "https://twitter.com/webslides", :rel => "external", :title => "Twitter"}
+          -#     %svg.fa-twitter
+          -#       %use{"xlink:href" => "#fa-twitter"}
+          -#     %em @WebSlides
+          / <li class="dribbble"><a rel="external" href="http://dribbble.com/jlantunez" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>jlantunez</em></a></li>
+    %main{:role => "main"}
+      %article#webslides.vertical
+        /
+          Quick Guide
+          \- Each parent <section> in the <article id="webslides"> element is an individual slide.
+          \- Vertical sliding = <article id="webslides" class="vertical">
+          \- <div class="wrap"> = container 1200px / <div class="wrap size-50"> = 600px;
+        %section
+          %span.background{:style => "background-image:url('static/images/ab/bg1.png')"}
+          / .wrap = container 1200px
+          .wrap.aligncenter
+            %h2
+              %strong Blockchain Development Intro
+            %h4
+              using Bitcoin and Ethereum
+              -# Ethereum contract programming with Metamask
+            .s90
+            .s40
+            %h5 Francesco <strong>@makevoid</strong> Canessa
+            .s30
+            %img{ src: "static/images/ab/ab_logo.png", width: "400px" }
+            -# %p
+            -#   %a.button.zoomIn{:href => "https://github.com/jlantunez/webslides/archive/master.zip", :title => "Download WebSlides for free"}
+            -#     %svg.fa-cloud-download
+            -#       %use{"xlink:href" => "#fa-cloud-download"}
+            -#     WebSlides
+          / .end .wrap
+        %section
+          .wrap
+            .content-center
+              %h2 Blockchain
+              .s100
+            .content-left
+              %h2 Private
+              %ul
+                %li
+                  %h4 Hosting
+                %li
+                  %h4 Backups
+                %li
+                  %h4 Privacy
+            .content-left
+              %h2 Public
+              %ul
+                %li
+                  %h4 Open access
+                %li
+                  %h4 Token based
+                %li
+                  %h4 Resilient
+
+
+        %section
+          .wrap
+            .content-center
+              %h2 Blockchain
+              .s100
+            .content-left
+              %h2 Bitcoin
+              %ul
+                %li
+                  %h4 First, specific for a monetary token
+                %li
+                  %h4 Token + OP RETURN
+
+            .content-left
+              %h2 Ethereum
+              %ul
+                %li
+                  %h4 Full smart contract functionality
+                %li
+                  %h4 Quicker confirmations
+
+
+        %section
+          .wrap.size-50.aligncenter
+            %h1
+              %strong Bitcoin
+
+        %section
+          .wrap.size-50.aligncenter
+            %h2
+              %strong Bitcoin
+            .s40
+
+            %h4 Monetary Token
+            .s40
+
+            %h4 OP_RETURN
+            .s40
+
+            %h4 UI
+
+
+        %section
+          .wrap.size-50.aligncenter
+            %h2
+              %strong Bitcoin
+
+            %h4 BTC - Monetary Token
+
+            .s50
+
+            %h5 Remittances
+            .s10
+            %p Money transmission - developing countries
+            %p ATM / POS / Exchange integration
+            .s30
+
+            %h5 Micro-Transactions
+            .s10
+            %p Donations (multiple-outputs transactions)
+            %p Pay-per-Second / Pay-per-View (payment channels)
+
+
+        %section
+          .wrap.size-50.aligncenter
+            %h2
+              %strong Bitcoin
+
+            %h4 OP_RETURN
+
+            .s50
+
+            %p Immutable data
+
+            %p Generate one keypair (thus one address) for each user
+
+            %p Save and Query JSON assertions
+
+            %p Compute document hashes (images, PDFs)
+
+
+        %section
+          .wrap.size-50.aligncenter
+            %h2
+              %strong Bitcoin
+
+            %h4 TOOLS
+
+            .s50
+
+            %p
+              %a{ href: "https://www.blockcypher.com/dev/bitcoin/" }
+                Blockcypher API
+              (blockchain API)
+
+            %p
+              %a{href: "https://github.com/bitpay/bitcore-lib"} bitcore-lib
+              (JS library)
+
+            %p Block explorers (blockchain.info, blockr.io ...)
+
+
+        %section
+          .wrap.size-70.aligncenter
+            %h2
+              %strong Bitcoin
+
+            %h4 bitcore-lib sample code
+
+            .s20
+            %pre.f-more
+              :preserve
+                var bitcore = require('bitcore-lib')
+
+                var privateKey = new bitcore.PrivateKey()
+                var address = privateKey.toAddress()
+
+        %section
+          .wrap.size-70.aligncenter
+            %h2
+              %strong Bitcoin
+
+            %h4 bitcore-lib sample code
+
+            .s20
+            %pre.f-more
+              :preserve
+                var bitcore = require('bitcore-lib') // via browserify
+
+                if (localStorage.privateKey) {
+                  console.log("Private key present in localStorage")
+                  console.log("Private key:")
+                  console.log(localStorage.privateKey)
+                  var address = new bitcore.PrivateKey(localStorage.privateKey.toAddress())
+                  console.log("Address:", address.toString())
+
+                } else {
+                  var privateKey    = new bitcore.PrivateKey()
+                  var privateKeyWif = privateKey.toWIF()
+                  localStorage.privateKey  = privateKeyWif
+                  console.log("Private key saved successfully!")
+
+                }
+
+
+        %section
+          .wrap.size-70.aligncenter
+            %h2
+              %strong Bitcoin
+
+            %h4 blockcypher address API
+
+            .s20
+            %pre.f-more
+              :preserve
+                curl https://api.blockcypher.com/v1/btc/main/addrs/1DEP8i3QJCsomS4BSMY2RpU1upv62aGvhD/full
+
+                {
+                "address": "1DEP8i3QJCsomS4BSMY2RpU1upv62aGvhD",
+                "total_received": 4433416,
+                "total_sent": 0,
+                "balance": 4433416,
+                "unconfirmed_balance": 0,
+                "final_balance": 4433416,
+                "n_tx": 7,
+                "unconfirmed_n_tx": 0,
+                "final_n_tx": 7,
+                "txs": [
+                    {
+                    "block_hash": "0000000000000000af64802c79...",
+                    "block_height": 292586,
+                    "hash": "b4735a0690dab16b8789fceaf81c511f...",
+                    "addresses": [
+                        "18KXZzuC3xvz6upUMQpsZzXrBwNPWZjdSa",
+                        "1AAuRETEcHDqL4VM3R97aZHP8DSUHxpkFV",
+                        .......
+
+
+        %section
+          .wrap.size-70.aligncenter
+            %h2
+              %strong OP_RETURN sample - Write
+
+            %h4 Blockchain pen
+
+            .s20
+
+            %h4
+              %a{ href: "http://blockchainpen.com" } blockchainpen.com
+
+
+        %section
+          .wrap.size-70.aligncenter
+            %h2
+              %strong OP_RETURN sample - Read
+
+            %h4 Query it
+
+            .s20
+
+            %pre.f-more
+              :preserve
+
+                curl https://api.blockcypher.com/v1/btc/main/addrs/1NU2Eymu8R7JkTuNiNF35ESB3PLty1vMre/full?confirmations=0  | grep data_string
+
+
+        -# ------------------------------------------------------
+
+
+        %section
+          .wrap.size-50.aligncenter
+            %h1
+              %strong ...
+
+
+        %section
+          .wrap.size-50.aligncenter
+            %h1
+              %strong Ethereum
+
+
+
+        %section
+          .wrap.size-70
+            %h3 SimpleStorage
+            %h5 a simple ethereum contract
+            .s20
+            %pre.f-more
+              :preserve
+
+                contract SimpleStorage {
+                  bytes32 data;
+
+                  function set(bytes32 _data) {
+                    data = _data;
+                  }
+
+                  function get() constant returns (bytes32 _data) {
+                    return data;
+                  }
+                }
+
+        %section
+          .wrap.size-70
+            %h3 SimpleStorage
+            %h5 a simple ethereum contract
+            .s20
+            %pre.f-more
+              :preserve
+
+                contract SimpleStorage {
+                  bytes32 public data;
+
+                  function set(bytes32 _data) {
+                    data = _data;
+                  }
+                }
+
+        %section
+          .wrap.size-70
+            %h3 Eth-Lock contract
+            %h5 unlock contract based on third-party message
+            .s20
+            %pre.f-more
+              :preserve
+
+                contract EthLock {
+                  uint lockedFundsAmount;
+
+                  address public owner = 0x1234;
+                  address public recipient = 0x12345;
+
+                  function unlockFunds() {
+                    if(msg.sender == owner) {
+                      recipient.send(lockedFundsAmount);
+                    }
+                  }
+
+                }
+
+        %section
+          .wrap.size-70
+            %h3 Eth-Lock contract
+            %h5 configurable
+            .s20
+            %pre.f-more
+              :preserve
+
+                contract EthLock {
+                  uint lockedFundsAmount;
+
+                  address public owner;
+                  address public recipient;
+
+                  function EthLock(address _recipient, address _owner) {
+                    recipient = _recipient;
+                    owner     = _owner;
+                  }
+
+                  function unlockFunds() {
+                    if(msg.sender == owner) {
+                      recipient.send(lockedFundsAmount);
+                    }
+                  }
+
+                }
+
+
+        %section
+          .wrap.size-70
+            %h3 Eth-Lock contract
+            %h5 configurable
+            .s20
+            %pre.f-more
+              :preserve
+                // pragma solidity ^0.4.8
+
+                contract EthLock {
+                  uint lockedFundsAmount;
+
+                  address public owner = 0x6e57c3777d6ca24c26bde462d22b16e41e5fe5f2;
+                  address public recipient = 0x6e57c3777d6ca24c26bde462d22b16e41e5fe5f2;
+
+                  function unlockFunds() {
+                    if(msg.sender == owner) {
+                      recipient.send(lockedFundsAmount);
+                    }
+                  }
+                }
+                //  0xbe3741bc0ecc248cb15d778ecdf1aa59887fc6ef
+        -#
+
+
+        %section
+          .wrap.size-50.aligncenter
+            %h2
+              %strong Metamask
+
+            %h5 Chrome extension
+            %h4 Ethereum browser connector
+
+            %h4
+              %a{ href: "https://metamask.io" } metamask.io
+
+
+        %section
+          .wrap.size-50.aligncenter
+            %h2
+              %strong browser-solidity
+
+            %h4
+              %a{ href: "https://ethereum.github.io/browser-solidity" } ethereum.github.io/browser-solidity
+
+
+        %section
+          .wrap.size-50.aligncenter
+            %h4
+              %strong browser-solidity + metamask
+            .s40
+            %h3 Demo
+
+
+
+        %section
+          .wrap.size-50.aligncenter
+            %h2
+              %strong Solidity documentation
+
+            %h4
+              %a{ href: "https://solidity.readthedocs.io" }  solidity.readthedocs.io
+
+        %section
+          .wrap.size-50.aligncenter
+            %h2
+              %strong web3 API
+
+            %h4
+              %a{ href: "https://github.com/ethereum/wiki/wiki/JavaScript-API" }  github.com/ethereum - wiki - JS-API
+
+        %section
+          .wrap.size-50.aligncenter
+            %h2
+              %strong ether-pudding
+
+            %h4
+              %a{ href: "https://github.com/trufflesuite/truffle-artifactor" }  github.com / trufflesuite / truffle-artifactor
+
+
+        %section
+          .wrap.size-50.aligncenter
+            %h3
+              %strong other options
+            %h5
+              %strong full nodes
+            .s40
+
+            %h4 Geth
+            %h5 go-ethereum
+
+            %p
+
+            %h4 Parity
+            %h5 ethcore (rust)
+
+
+
+        %section
+          .wrap
+            .content-center
+              %h3 Have fun!
+
+        %section.slide-bottom
+          .wrap
+            .content-right.text-serif
+              %h2
+              %h2
+                %a{:href => "http://github.com/makevoid", :target => "_blank"}
+                  %svg.fa-github
+                    %use{"xlink:href" => "#fa-github"}
+                %a{:href => "http://twitter.com/makevoid", :target => "_blank", :title => "Share on Twitter"}
+                  %svg.fa-twitter
+                    %use{"xlink:href" => "#fa-twitter"}
+
+                @makevoid
+              -# %p
+              -#   People share content that makes them feel inspired. WebSlides is a very effective way to engage young audiences, customers, and teams. Best,
+              -#   = succeed "." do
+              -#     %a{:href => "https://twitter.com/jlantunez"} @jlantunez
+              -# %figure
+              -#   %a{:href => "http://linkedin.com/in/jlantunez", :title => "LinkedIN — José Luis Antúnez"}
+              -#     %img.aligncenter.fadeInUp{:alt => "Signature", :src => "https://webslides.tv/static/images/signature.png"}/
+            / .end .content-right
+            %img{ src: "static/images/ab/ab_logo.png", width: "400px" }
+
+      / end article
+    / end main
+    /
+      Remove #webslides element :)
+
+      <footer role="contentinfo">
+      <div class="wrap">
+      <p>An <a href="https://github.com/jlantunez/webslides">open source solution</a>, by <a href="https://twitter.com/jlantunez">@jlantunez</a>.</p>
+      </div>
+      </footer>
+    / jQuery (required for slides to work)
+    %script{:src => "https://code.jquery.com/jquery-3.1.1.min.js"}
+    %script{:src => "static/js/webslides.js"}
+    / OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons)
+    %script{:defer => "defer", :src => "static/js/svg-icons.js"}
